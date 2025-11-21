@@ -1,0 +1,32 @@
+html, body {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+    background-color: #dadada;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    border: 3px solid black;
+}
+
+.book {
+    text-align: center;
+    border: 1px solid yellow;
+    padding: 10px;
+}
