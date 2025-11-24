@@ -7,26 +7,53 @@ html, body {
     width: 100%;
     justify-content: center;
     align-items: center; 
-    background-color: #dadada;
+    background-color: #121212;
     box-sizing: border-box;
 }
 
 .main-container {
     display: flex;
+    gap: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    padding: 50px;
 }
 
 .book-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    border: 3px solid black;
+    grid-auto-rows: auto;
+    gap: 20px;
 }
 
 .book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
     text-align: center;
-    border: 1px solid yellow;
+    color: #E0E0E0;
+    border: 3px solid #444444;
+    border-left: 8px solid #888888;
+    border-radius: 3px;
     padding: 10px;
 }
+
+.add-button, .toggle-read, .delete-button{
+    display: flex;
+    padding: 10px; 
+    background-color: #444444;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    color: #E0E0E0;
+    text-align: center;
+    align-items: center;
+}
+
+.add-button:hover, .toggle-read:hover, .delete-button:hover {
+    background-color: #888888
+}
+
+

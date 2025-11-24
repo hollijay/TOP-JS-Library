@@ -10,6 +10,26 @@
 <body>
     <div class="main-container">
         <div class="book-grid"></div>
+        <button class="add-button">Add Book</button>
+        <dialog>
+            <form action="" method="">
+                <input type="text" id="Title" name="Title" placeholder="Title:" required>
+                <input type="text" id="Author" name="Author" placeholder="Author:" required>
+                <input type="text" id="Pages" name="Pages" placeholder="Pages:" required>
+                <fieldset>
+                    <legend>Have you Read the book?</legend>
+                    <div>
+                        <input type="radio" id="Yes" name="choice" value="Yes">
+                        <label for = "Yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="No" name="choice" value="No">
+                        <label for = "No">No</label>
+                    </div>
+                </fieldset>
+                <button class ="create-button">create</button>
+            </form>
+        </dialog>
     </div>
 </body>
 </html>
